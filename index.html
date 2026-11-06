@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="林屿 Lin Yu — 交互设计师与创意开发者个人作品集。">
+  <title>LIN YU® — Creative Developer</title>
+  <link rel="icon" type="image/png" href="assets/smiley-transparent.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="scanlines" aria-hidden="true"></div>
+  <div class="cursor cursor--dot" aria-hidden="true"></div>
+  <div class="cursor cursor--ring" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="回到首页">
+      <span class="brand__mark">LY</span>
+      <span class="brand__text">LIN YU®<br>PORTFOLIO / 2026</span>
+    </a>
+
+    <nav class="nav" id="site-nav" aria-label="主导航">
+      <a href="#work">作品 <sup>03</sup></a>
+      <a href="#about">关于</a>
+      <a href="#playground">实验</a>
+      <a href="#contact">联系</a>
+    </nav>
+
+    <div class="header-status">
+      <span class="status-dot"></span>
+      AVAILABLE FOR WORK
+    </div>
+
+    <button class="menu-toggle" type="button" aria-label="打开菜单" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero__meta hero__meta--left">
+        <span>CREATIVE DEVELOPER</span>
+        <span>SHANGHAI · CN</span>
+      </div>
+      <div class="hero__meta hero__meta--right">
+        <span>SCROLL TO EXPLORE</span>
+        <span>31.2304° N / 121.4737° E</span>
+      </div>
+
+      <div class="hero__title">
+        <div class="hero__eyebrow reveal">
+          <span>HELLO, I’M LIN YU</span>
+          <span class="eyebrow-line"></span>
+          <span>交互设计师 / 创意开发者</span>
+        </div>
+
+        <h1 aria-label="I make the web feel alive">
+          <span class="title-line title-line--outline glitch-text" data-text="I MAKE">I MAKE</span>
+          <span class="title-line title-line--accent">THE WEB</span>
+          <span class="title-line title-line--end glitch-text" data-text="FEEL ALIVE.">FEEL ALIVE.</span>
+        </h1>
+
+        <div class="hero__bottom reveal">
+          <p>把代码、动效和一点怪趣味，<br>揉成有生命的数字体验。</p>
+          <a class="round-link magnetic" href="#work" aria-label="查看精选作品">
+            <span>VIEW<br>WORK</span>
+            <span class="round-link__arrow">↘</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__visual" aria-label="黄色故障笑脸主视觉">
+        <div class="visual-orbit visual-orbit--one" aria-hidden="true"></div>
+        <div class="visual-orbit visual-orbit--two" aria-hidden="true"></div>
+        <span class="visual-note visual-note--top">SIGNAL_01</span>
+        <span class="visual-note visual-note--bottom">DON’T PANIC :)</span>
+        <div class="smiley" id="hero-smiley">
+          <img src="assets/smiley-transparent.png" alt="带有 CRT 扫描线效果的黄色笑脸" draggable="false">
+          <span class="smiley__scan" aria-hidden="true"></span>
+          <span class="smiley__badge" aria-hidden="true">SMILE<br>MODE</span>
+        </div>
+      </div>
+
+      <div class="hero__stamp" aria-hidden="true">
+        <svg viewBox="0 0 150 150">
+          <defs>
+            <path id="stamp-path" d="M75,75 m-54,0 a54,54 0 1,1 108,0 a54,54 0 1,1 -108,0"/>
+          </defs>
+          <text>
+            <textPath href="#stamp-path">GOOD IDEAS START WITH A SMILE · GOOD IDEAS START WITH A SMILE · </textPath>
+          </text>
+        </svg>
+        <span>✳</span>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>CREATIVE DEVELOPMENT</span><i>✳</i>
+        <span>MOTION DIRECTION</span><i>✳</i>
+        <span>INTERFACE DESIGN</span><i>✳</i>
+        <span>AI PROTOTYPING</span><i>✳</i>
+        <span>CREATIVE DEVELOPMENT</span><i>✳</i>
+        <span>MOTION DIRECTION</span><i>✳</i>
+        <span>INTERFACE DESIGN</span><i>✳</i>
+        <span>AI PROTOTYPING</span><i>✳</i>
+      </div>
+    </div>
+
+    <section class="about section-shell" id="about">
+      <div class="section-label reveal">
+        <span>01 / ABOUT</span>
+        <span>设计不是装饰，是体验的节奏。</span>
+      </div>
+
+      <div class="about__grid">
+        <div class="about__statement reveal">
+          <span class="small-kicker">NICE TO MEET YOU</span>
+          <h2>
+            我在<span class="outline-word">界面</span>与<br>
+            <span class="accent-word">情绪</span>之间，<br>
+            做一点有用的实验。
+          </h2>
+        </div>
+
+        <div class="about__copy reveal">
+          <p class="about__lead">我是林屿，一名常驻上海的交互设计师与创意开发者。喜欢把品牌、叙事和前端技术放进同一个画面里。</p>
+          <p>关注 AI 原生产品、动态视觉和那些“看起来好像不太可能”的网页体验。工作范围从概念、视觉系统，一直延伸到最终上线。</p>
+          <a class="text-link" href="mailto:hello@yourname.com">聊聊一个想法 <span>↗</span></a>
+        </div>
+      </div>
+
+      <div class="stats reveal">
+        <div class="stat">
+          <strong data-count="5">05</strong>
+          <span>YEARS<br>EXPERIENCE</span>
+        </div>
+        <div class="stat">
+          <strong data-count="38">38</strong>
+          <span>PROJECTS<br>SHIPPED</span>
+        </div>
+        <div class="stat">
+          <strong data-count="12">12</strong>
+          <span>DESIGN<br>AWARDS</span>
+        </div>
+        <div class="stat stat--note">
+          <span class="mini-smiley">☻</span>
+          <span>可用档期<br>2026 / Q1</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="work section-shell" id="work">
+      <div class="section-label reveal">
+        <span>02 / SELECTED WORK</span>
+        <span>一些近期作品与个人实验。</span>
+      </div>
+
+      <div class="work__heading reveal">
+        <h2>MAKE IT<br><span>MEMORABLE.</span></h2>
+        <p>精选项目<br>2023 — 2026</p>
+      </div>
+
+      <div class="project-grid">
+        <article class="project project--wide reveal" data-tilt>
+          <button class="project__open" type="button" data-project="echo" aria-label="查看 Echo Atlas 项目">
+            <div class="project__visual project__visual--echo">
+              <span class="project__index">01</span>
+              <div class="echo-orb">
+                <span></span><span></span><span></span>
+              </div>
+              <span class="project__micro">SOUND × SPACE</span>
+              <span class="project__vertical">GENERATIVE<br>EXPERIENCE</span>
+            </div>
+            <div class="project__info">
+              <div>
+                <span class="project__type">ART DIRECTION / CREATIVE CODE</span>
+                <h3>ECHO ATLAS</h3>
+              </div>
+              <span class="project__year">2026</span>
+            </div>
+          </button>
+        </article>
+
+        <article class="project reveal" data-tilt>
+          <button class="project__open" type="button" data-project="soft" aria-label="查看 Soft Error 项目">
+            <div class="project__visual project__visual--soft">
+              <span class="project__index">02</span>
+              <span class="soft-word soft-word--one">SOFT</span>
+              <span class="soft-word soft-word--two">ERROR</span>
+              <span class="soft-face">☺</span>
+              <span class="project__micro">BRAND × DIGITAL</span>
+            </div>
+            <div class="project__info">
+              <div>
+                <span class="project__type">IDENTITY / WEB EXPERIENCE</span>
+                <h3>SOFT ERROR</h3>
+              </div>
+              <span class="project__year">2025</span>
+            </div>
+          </button>
+        </article>
+
+        <article class="project reveal" data-tilt>
+          <button class="project__open" type="button" data-project="after" aria-label="查看 Afterglow Lab 项目">
+            <div class="project__visual project__visual--after">
+              <span class="project__index">03</span>
+              <div class="after-grid" aria-hidden="true"></div>
+              <div class="after-disc" aria-hidden="true"></div>
+              <span class="project__micro">AI × INTERFACE</span>
+              <span class="after-type">AFTER<br>GLOW</span>
+            </div>
+            <div class="project__info">
+              <div>
+                <span class="project__type">PRODUCT / AI PROTOTYPE</span>
+                <h3>AFTERGLOW LAB</h3>
+              </div>
+              <span class="project__year">2024</span>
+            </div>
+          </button>
+        </article>
+      </div>
+    </section>
+
+    <section class="playground" id="playground">
+      <div class="playground__copy reveal">
+        <span class="section-label section-label--light">
+          <span>03 / PLAYGROUND</span>
+          <span>移动鼠标，打破秩序。</span>
+        </span>
+        <h2>WEB IS A<br><span>PLAYGROUND.</span></h2>
+        <p>每个像素都应该有机会做点意想不到的事。</p>
+      </div>
+
+      <div class="pixel-field" id="pixel-field" aria-label="可交互笑脸图案">
+        <div class="field-hint"><span>MOVE</span> YOUR CURSOR <span>↘</span></div>
+      </div>
+
+      <div class="playground__ticker" aria-hidden="true">
+        <span>CLICK / HOVER / BREATHE / REPEAT / </span>
+        <span>CLICK / HOVER / BREATHE / REPEAT / </span>
+      </div>
+    </section>
+
+    <section class="contact section-shell" id="contact">
+      <div class="section-label reveal">
+        <span>04 / CONTACT</span>
+        <span>有一个有趣的想法？直接告诉我。</span>
+      </div>
+
+      <div class="contact__top reveal">
+        <p>LET’S MAKE<br>SOMETHING</p>
+        <div class="contact__smiley" aria-hidden="true">
+          <img src="assets/smiley-transparent.png" alt="">
+        </div>
+      </div>
+
+      <a class="contact__mail reveal" href="mailto:hello@yourname.com">
+        <span>HELLO@YOURNAME.COM</span>
+        <span class="contact__arrow">↗</span>
+      </a>
+
+      <div class="contact__footer reveal">
+        <div>
+          <span>WECHAT</span>
+          <a href="#contact">YOUR_WECHAT_ID</a>
+        </div>
+        <div>
+          <span>SOCIAL</span>
+          <a href="https://www.behance.net/" target="_blank" rel="noreferrer">BEHANCE ↗</a>
+        </div>
+        <div>
+          <span>LOCATION</span>
+          <p>SHANGHAI, CHINA<br><span id="local-time">00:00:00 CST</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© 2026 LIN YU STUDIO</span>
+    <span>DESIGNED WITH CURIOSITY &amp; CAFFEINE</span>
+    <a href="#home">BACK TO TOP ↑</a>
+  </footer>
+
+  <div class="project-modal" id="project-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <button class="modal-close" type="button" aria-label="关闭项目详情">CLOSE ×</button>
+    <div class="modal-visual" id="modal-visual"></div>
+    <div class="modal-copy">
+      <span class="modal-kicker">SELECTED PROJECT</span>
+      <h2 id="modal-title"></h2>
+      <p id="modal-description"></p>
+      <div class="modal-tags" id="modal-tags"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
